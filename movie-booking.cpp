@@ -1,9 +1,7 @@
 /*
-Roll numbers 
-2345 Manasi Kasande
-2337 Sejal Jagtap 
-2325 Vibavari G
-2342 Kanchan Chib */
+Roll number:
+2325 Vibavari Gurunathan
+*/
 #include <iostream>
 using namespace std;
 class seat
@@ -13,24 +11,18 @@ class seat
 	float price;
 	char row;
 	friend class theatre;
-
 	public:
-
 		seat()
 		{
 			//initially all seats are unbooked
 			//false - unbooked and true - booked
 			booked = false;
 			price = 0.0f;
-
 		}
-
 };
 class theatre
 {
 	seat s[10][20];
-	
-
 	public:
 	theatre()
 	{
@@ -72,8 +64,6 @@ class theatre
 	void bookTickets();
 
 	void cancelBooking();
-
-
 };
 void theatre::bookTickets( )
 {
